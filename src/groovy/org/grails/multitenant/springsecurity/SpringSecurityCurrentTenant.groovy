@@ -14,10 +14,10 @@
  */
 package org.grails.multitenant.springsecurity
 
-import com.infusion.tenant.CurrentTenant
+import grails.plugin.multitenant.core.CurrentTenant
 import org.springframework.security.core.context.SecurityContextHolder
 import com.infusion.util.event.EventBroker
-import com.infusion.tenant.event.TenantChangedEvent
+import grails.plugin.multitenant.core.event.TenantChangedEvent
 import org.codehaus.groovy.grails.commons.ApplicationHolder as AH
 
 /**
