@@ -2,3 +2,7 @@
 /.project
 /.settings
 /bin
+/target
+*.log
+/plugin.xml
+/grails-multi-tenant-spring-security-*.zip
