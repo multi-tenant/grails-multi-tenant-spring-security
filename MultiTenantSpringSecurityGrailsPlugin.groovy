@@ -18,6 +18,7 @@ import org.codehaus.groovy.grails.commons.ConfigurationHolder
 /**
  *
  * @author <a href='mailto:limcheekin@vobject.com'>Lim Chee Kin</a>
+ * @author <a href='mailto:steve@ronderos.com'>Steve Ronderos</a>
  *
  * @since 0.1
  */
@@ -37,12 +38,12 @@ class MultiTenantSpringSecurityGrailsPlugin {
     def authorEmail = "limcheekin@vobject.com"
     def title = "Multi-Tenant Spring Security Integration"
     def description = '''\
-Integrates the multi-tenant plugin (http://www.grails.org/plugin/multi-tenant) with spring-security-core plugin (http://www.grails.org/plugin/spring-security-core), so the current tenant can be determined from the authenticated principal.
+Integrates the multi-tenant-core plugin (http://www.grails.org/plugin/multi-tenant-core) with the spring-security-core plugin (http://www.grails.org/plugin/spring-security-core), so that the current tenant can be determined from the authenticated principal.
 
 Provides a custom CurrentTenant implementation that uses the security context to identify the current tenant.  This allows all users to login from 
 one url instead of having to remember a special url to log in to.
 
-This plugin is created based on the codes of multi-tenant-acegi plugin (http://www.grails.org/plugin/multi-tenant-acegi). All configurations are same with multi-tenant-acegi plugin except the tenant resolver property in Config.groovy.
+This plugin's code is based on the code of multi-tenant-acegi plugin (http://www.grails.org/plugin/multi-tenant-acegi). All configurations are same with multi-tenant-acegi plugin except the tenant resolver property in Config.groovy.
 Your tenant resolver property should look like this:
 {code}
 tenant {
