@@ -5,4 +5,5 @@
 /target
 *.log
 /plugin.xml
-/grails-multi-tenant-spring-security-*.zip
+*.zip
+/web-app/WEB-INF/classes
