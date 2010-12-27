@@ -24,11 +24,11 @@ import org.codehaus.groovy.grails.commons.ConfigurationHolder
  */
 class MultiTenantSpringSecurityGrailsPlugin {
     // the plugin version
-    def version = "0.2.0"
+    def version = "0.2.1"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.5 > *"
     // the other plugins this plugin depends on
-    def dependsOn = [springSecurityCore:"1.0.1", multiTenantCore:"1.0.0"]
+    def dependsOn = [springSecurityCore:"1.0.0 > *", multiTenantCore:"1.0.0 > *"]
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
             "grails-app/views/error.gsp"
