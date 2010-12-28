@@ -46,7 +46,7 @@ public class SpringSecurityCurrentTenant implements CurrentTenant {
 	private Integer getTenantIdFromSpringSecurity() {
 		Object principal = SecurityContextHolder.getContext().getAuthentication()?.getPrincipal()
 		
-		if (principal?.respondsTo('id')) {
+		if (principal?.respondsTo('getId')) {
 			def userClass = AH.application.getDomainClass(AH.application.config.grails.plugins.springsecurity.userLookup.userDomainClassName) 
 			def userInstance = userClass.clazz.get(principal.id)   
 			Integer tid = userInstance?.userTenantId
